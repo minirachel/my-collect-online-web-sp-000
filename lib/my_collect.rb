@@ -1,6 +1,9 @@
 def my_collect(array)
-counter = 0
-
-  my_collect(array) do |item|
-    counter += 1
+  i = 0
+  list = []
+  while i < array.length
+    list << yield(array[i])
+    i +=
+  end
+  list
 end
