@@ -11,3 +11,7 @@ end
 my_collect(array) do |item|
   if item.include?(" ")
     item.scan(/^\w+/)
+  else
+    item.upcase
+  end
+end
