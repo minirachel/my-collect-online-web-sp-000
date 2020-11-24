@@ -8,10 +8,10 @@ def my_collect(array)
   list
 end
 
-my_collect(array) do |item|
-  if item.include?(" ")
-    item.split(" ").first
+my_collect(array) do |i|
+  if i.include?(" ")
+    i.split(" ").first
   else
-    item.upcase
+    i.upcase
   end
 end
