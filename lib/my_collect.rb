@@ -7,3 +7,7 @@ def my_collect(array)
   end
   list
 end
+
+my_collect(array) do |item|
+  if item.include?(" ")
+    item.scan(/^\w+/)
