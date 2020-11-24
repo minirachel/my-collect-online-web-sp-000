@@ -10,7 +10,7 @@ end
 
 my_collect(array) do |item|
   if item.include?(" ")
-    item.scan(/^\w+/)
+    item.split(" ").first
   else
     item.upcase
   end
